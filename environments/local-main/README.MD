@@ -7,7 +7,7 @@ This is the configuration for you main system. To set this up, open a PowerShell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 #Run this script
-iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+iex (new-object net.webclient).downloadstring('https://goo.gl/8DLa4x')
 
 
 ```
