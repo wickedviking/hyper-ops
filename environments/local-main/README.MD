@@ -4,7 +4,7 @@ Local-Main
 This is the configuration for you main system. To set this up, open a PowerShell prompt in Admin mode.
 ```
 #Set Execution Policy to allow remote scripts
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
 #Run this script
 iex (new-object net.webclient).downloadstring('https://goo.gl/8DLa4x')
