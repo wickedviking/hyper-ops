@@ -1,0 +1,24 @@
+{
+  "variables": {},
+  "builders": [
+    {
+      "type": "hyperv-iso",
+      "guest_additions_mode": "disable",
+      "iso_url": "{{user `iso`}}",
+      "iso_checksum_type": "{{user `checksum_type`}}",
+      "iso_checksum": "{{user `checksum`}}",
+      "ram_size_mb": 2048,
+      "communicator": "winrm",
+      "winrm_username": "vagrant",
+      "winrm_password": "vagrant",
+      "winrm_timeout": "12h",
+      "shutdown_command": "C:/Windows/Panther/Unattend/packer_shutdown.bat",
+      "shutdown_timeout": "15m",
+      "switch_name": "internal_switch",
+      "floppy_files": [
+        "answer_files/2016/Autounattend.xml",
+        "scripts/winrm.ps1"
+      ]
+    }
+  ]
+}
