@@ -8,8 +8,9 @@ This is the configuration for you main system. To set this up, open a PowerShell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
 #Run this script
-iex (new-object net.webclient).downloadstring('https://goo.gl/8DLa4x')
+iex (new-object net.webclient).downloadstring('https://goo.gl/qvWilN')
 ```
+
 
 iex (new-object net.webclient).downloadstring('https://goo.gl/8DLa4x')2 yyyh xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
